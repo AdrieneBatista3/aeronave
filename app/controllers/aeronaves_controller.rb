@@ -1,6 +1,6 @@
 class AeronavesController < ApplicationController
   before_action :set_aeronafe, only: [:show, :edit, :update, :destroy]
-  
+  before_action :authenticate_user!
   # GET /aeronaves
   # GET /aeronaves.json
   def index
